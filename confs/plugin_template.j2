@@ -1,0 +1,6 @@
+{% for job in jobs|default([]) %}
+{{ job.name }}:{% for key, value in job.items() %}
+  {{ key }}: {{"" if value is mapping else "'"}}{{ value }}{{"" if value is mapping else "'"}}{% endfor %}
+  retries: 300
+  autodetection_retry: 300
+{% endfor %}
