@@ -4,13 +4,15 @@
 
 ## Description
 
-Based on the [official netdata image](https://hub.docker.com/r/netdata/netdata/) with custom configs, an entrypoint script and a healthcheck added.
+Based on the [official netdata image](https://hub.docker.com/r/netdata/netdata/) with custom configs, an entrypoint script and a healthcheck added. Any Python.d plugin is supported by that image.
 
-## Deploy example
+## Deploy examples
+
+### Common
 
 ``` yaml
 netdata:
-  image: oss.help/pub/netdata:stable
+  image: osshelp/netdata:stable
   environment:
     NETDATA_HOSTNAME: somehostname
     NETDATA_MASTER_API_KEY: $NETDATA_API_KEY
@@ -26,7 +28,15 @@ netdata:
     - net
 ```
 
-Any Python.d plugin is supported by that image.
+### Internal usage
+
+For internal porposes and osshelp customers we have an alternative image url:
+
+``` yaml
+  image: oss.help/pub/netdata:stable
+```
+
+There is no difference between the DockerHub image and the oss.help/pub image.
 
 ## Links
 
