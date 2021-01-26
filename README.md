@@ -30,7 +30,7 @@ netdata:
 
 ### Internal usage
 
-For internal porposes and osshelp customers we have an alternative image url:
+For internal porposes and OSSHelp customers we have an alternative image url:
 
 ``` yaml
   image: oss.help/pub/netdata:stable
