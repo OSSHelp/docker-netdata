@@ -40,8 +40,9 @@ There is no difference between the DockerHub image and the oss.help/pub image.
 
 ## Links
 
-- [official image](https://hub.docker.com/r/netdata/netdata)
-- [official documentation](https://docs.netdata.cloud/packaging/docker/#install-netdata-with-docker)
+- [Official image](https://hub.docker.com/r/netdata/netdata)
+- [Official documentation](https://docs.netdata.cloud/packaging/docker/#install-netdata-with-docker)
+- [Collection of Grafana dashboards](https://grafana.com/orgs/osshelp)
 
 ## TODO
 
