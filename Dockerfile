@@ -1,4 +1,4 @@
-FROM netdata/netdata:v1.27.0
+FROM netdata/netdata:stable
 # hadolint ignore=DL3018,DL3013
 RUN apk add --no-cache py3-pip py-setuptools tzdata py3-mysqlclient \
     && pip3 install j2cli[yaml] rethinkdb pymongo \
